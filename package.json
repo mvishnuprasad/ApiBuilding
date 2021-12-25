@@ -1,0 +1,27 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvishnuprasad/ApiBuilding.git"
+  },
+  "author": "Vishnu Prasad M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvishnuprasad/ApiBuilding/issues"
+  },
+  "homepage": "https://github.com/mvishnuprasad/ApiBuilding#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "express": "^4.17.2",
+    "mongodb": "^4.2.2",
+    "mongoose": "^6.1.3"
+  }
+}
