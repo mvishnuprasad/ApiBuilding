@@ -1,0 +1,62 @@
+Relational DBMS
+    * Data appears as tables of row and column.
+    * Enables a yser to CRUD.
+    * Eg: MySQL, MariaDB, Oracle, and others
+
+NoSQL: Not only SQL but also a database that stores data in a non-relational way.
+    * Data is stored in a key-value pair.
+    * Enables a user to CRUD.
+    * Eg: MongoDB, CouchDB, and others
+    * NoSQL is used with real time applications.
+    * Faster than SQL.
+
+
+MongoDB
+
+* It is a Open source, cross platform, document-oriented database.
+* It is a NoSQL database.
+* It is a key-value database.
+* It is a distributed database.
+
+MongoDB consists of a set of database, each of them contains collections and which again has docstore
+Mongodb is schemaless, which means that every collection can contain diff objects/docs(JSON) 
+Key value pairs: prmitive/array o docs and kvp
+COllection: Set of mongoDB docstore
+they are a way of storing relational data
+
+Mongodb represent docs in binary encoded format called BSON which extends json to provide addional Datatypes and encodingsand 
+decoing with additinal datatypes like dates and binary.
+
+Documents in same collecction need not have same set of fields. A field can also be a link to anothe docs
+
+Mongodb doesnot support multiple doc tsTryParseGenericAsyncArrowFunction
+SQL: Table
+Mongo: collection
+
+SQL: Row
+Mongo: document 
+
+
+cmd values
+
+in the mongodb binary directory
+
+mongo: start servers
+show dbs: Create databases
+db.createCollection("name") : create a new collection
+show collections : Shows collections
+db.collection_name.find() : Shows all documents in a collection
+db.collection_name.find({field:value}) : Shows all documents in a collection that match the given field and value
+
+use: create a db
+insertOne() : create a new doc/ insert into collection_name
+insertMany() : create multiple docs/ insert into collection_name
+
+db.CollectionName.find() : shows all elemnts in a collection
+db.books.update({"name":"aa"},{$unset:{"name":"Abe"}}) : here it will update name aa to name Abe . if $unset is used it will update nameremove to remove
+that value 
+db.Books.remove({"name":"q"}): remove that item/
+
+db.collection_name.drop() :remove collection
+db.dropdatabase() : remove db
+
