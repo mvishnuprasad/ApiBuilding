@@ -1,0 +1,1 @@
+way to transact with a backend using HTTP using GET POST PUT and DELETE methods.
