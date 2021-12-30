@@ -1,14 +1,21 @@
+import { addNewContact,
+getContact,
+getContactwithID
+} from '../controllers/crmControllers';
 const routes = (app) => {
     app.route('/contact')
-    .get((req, res) => {
-        res.send('GET request to the homepage');
-    })
-    .post((req, res) => {
-        res.send('POST request to the homepage');
-    })
+    .get((req, res,next) => {
+        // middleware
+        console.log(`Request from: ${req.originalUrl}`);
+        console.log(`Request type: ${req.method}`);
+        next();
+    }, getContact)
+
+    .post(addNewContact);
     app.route('/contact/:contactId')
-    .put((req, res) => {
-        res.send('PUT request to the homepage');
+    .get(getContactwithID)
+    .put(() => {
+        res.send('PUT request to the homepage ');
     })
     .delete((req, res) => {
         res.send('DELETE request to the homepage');
